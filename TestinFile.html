@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h2>Whatever I can call this</h2>
+
+        <p id="Result"></p>
+        <script>
+            const Even = [2, 6, 30, 10, 40, 13, 58, 21, 38, 24, 24, 67, 44, 12];
+            let message = "";
+
+
+            for (let i = 1; i < Even.length; i += 2) {
+                let num = Even[i];
+                if (num % 2 === 0) {
+                    message += `Place ${i + 1}, Number ${num} is even.<br>`;
+                }
+            }
+
+            document.getElementById("Result").innerHTML = message;
+        </script>
+    </body>
+</html>
